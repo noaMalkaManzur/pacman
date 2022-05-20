@@ -1,5 +1,6 @@
 # pacman
-This game is written in c++ obj
+This game is written in c++ obj.
+
 About creaturers of the game:
 
 Ghost:

@@ -22,26 +22,6 @@ char QDist::getMinumDistance(bool keepTrack[][SIZECOL],int row, int col, ghost& 
     QDist source(currGhost.getX(), currGhost.getY(), 0);
     return calDistance(source, keepTrack,row,col,pac);
 }
-//
-//// To keep track of visited QDist and marking wall as visited
-//void QDist::createArrTrack(bool keepTrack[][SIZECOL], char boardGame[][SIZECOL], int row, int col) {
-//
-//    int i, j;
-//    for (i = 0; i < row; ++i) {
-//        for (j = 0; j < col; ++j) {
-//            if (boardGame[i][j] == '#') {
-//                keepTrack[i][j] = true;
-//            }
-//            else {
-//                keepTrack[i][j] = false;
-//            }
-//        }
-//    }
-//
-// /*   for (auto& ghost : board.getArrGhost()) {
-//        keepTrack[ghost->getX()][ghost->getY()] = true;
-//    }*/
-//}
 
 // applying BFS on keppTrack starting from the point of the ghost
 char QDist::calDistance(QDist& source, bool keepTrack[SIZEROW][SIZECOL],int row, int col, const Point& pac) {

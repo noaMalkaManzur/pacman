@@ -129,6 +129,7 @@ void gamePlay::switchMenu() {
 			clear_screen();
 			PresentInstructionsandKeys();
 			afterInstruction();
+			userChoice[0] = 0;
 			break;
 		case '9':
 			userChoice = 9;
